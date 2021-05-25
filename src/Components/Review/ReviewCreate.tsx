@@ -60,7 +60,7 @@ export default class ReviewCreate extends React.Component<IProps, IState>{
 
         console.log("Check the Review database!")
 
-             fetch(`http://localhost:3000/review/post`, {
+             fetch(process.env.REACT_APP_SERVER_API_URL+`/review/post`, {
               method: "POST",
               body: JSON.stringify({
                 review: this.state.review,

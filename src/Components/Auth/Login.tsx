@@ -48,7 +48,7 @@ export default class Login extends React.Component <IProps, IState>{
         password: this.state.password,
       };
   
-      fetch("http://localhost:3000/user/login", {
+      fetch(process.env.REACT_APP_SERVER_API_URL+"/user/login", {
         method: "POST",
         body: JSON.stringify(fetchBody),
         headers: {

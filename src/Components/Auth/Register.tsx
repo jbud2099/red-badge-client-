@@ -137,7 +137,7 @@ export default class Register extends React.Component <{},IState>{
         
 
         
-          fetch(`http://localhost:3000/user/register`, {
+          fetch(process.env.REACT_APP_SERVER_API_URL+`/user/register`, {
             method: "POST",
             body: JSON.stringify(fetchBody),
             headers: {

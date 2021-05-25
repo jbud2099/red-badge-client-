@@ -46,7 +46,7 @@ export default class ReviewDisplay extends React.Component<IProps, IState> {
   deleteReview(e: React.BaseSyntheticEvent) {
     e.preventDefault();
 
-    fetch(`http://localhost:3000/review/`, {
+    fetch(process.env.REACT_APP_SERVER_API_URL+`/review/`, {
       method: "DELETE",
       headers: new Headers({
         "Content-Type": "application/json",
@@ -105,7 +105,7 @@ export default class ReviewDisplay extends React.Component<IProps, IState> {
   // }
 
   testFunction = () => {
-    fetch(`http://localhost:3000/review/all`, {
+    fetch(process.env.REACT_APP_SERVER_API_URL+`/review/all`, {
       method: "GET",
       headers: new Headers({
         "Content-Type": "application/json",
