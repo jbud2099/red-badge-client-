@@ -67,7 +67,7 @@ export default class Login extends React.Component <IProps, IState>{
              this.props.updateToken(data.token);
            //}
           //this.context.setToken(res.token)
-          console.log(data.token)
+          console.log(data)
           localStorage.setItem('token', data.token)
         })
         // .catch((err) => {
