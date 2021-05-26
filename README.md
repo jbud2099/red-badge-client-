@@ -1,3 +1,11 @@
+The client side was originally was supposed to be like a reddit.com website, with using a api database called RAWG, but a
+lot of changes had to go in the garbage because it was taking me so much time to do it correctly. So I decided to work on a regular posting review app where an user could post a review game. 
+The auth page for the register and login still works for the user's side, just when the user logs in they will have their token inside of the application. And with that token you can make a post to the database in pgAdmin. 
+
+I didn't get a chance to get all of the requirements of this assingment for the client side which is too late, but I guess I could say this project will still be a work in progress in my heart of coding in the future. Again I wish I had a lot of time and to have a better chance at understanding typescript for this course, but I will always strive try my best at anything.
+
+Thank You!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
