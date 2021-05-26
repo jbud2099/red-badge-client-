@@ -56,19 +56,19 @@ export default class Login extends React.Component <IProps, IState>{
         },
       })
         .then((res) => {
-          // if (res.status != 200) {
-          //    this.setError("Invalid username or password.");
-          //    console.log("error")
-          // }
+          if (res.status != 200) {
+             this.setError("Invalid username or password.");
+             console.log("error")
+          }
           return res.json();
         })
-        .then((data) => {
+        .then((res) => {
            //if (!res.error) {
-             this.props.updateToken(data.token);
+             this.props.updateToken(res.token);
            //}
           //this.context.setToken(res.token)
-          console.log(data)
-          localStorage.setItem('token', data.token)
+          console.log(res)
+          localStorage.setItem('token', res.token)
         })
         // .catch((err) => {
         //   console.log(err);
